@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #popup-reduction {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            border-radius: 10px;
+        }
+        #popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+        .popup-btn {
+            background-color: #f39c12;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .popup-btn:hover {
+            background-color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+
+<div id="popup-overlay"></div>
+<div id="popup-reduction">
+    <h2>🎉 5% de réduction !</h2>
+    <p>Utilisez le code <strong>CALISSON</strong> lors de votre achat.</p>
+    <button class="popup-btn" onclick="window.close();">Fermer</button>
+</div>
+
+</body>
+</html>
